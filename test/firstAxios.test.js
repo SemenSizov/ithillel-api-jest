@@ -5,7 +5,7 @@ test.skip('should fetch brands', async () => {
   expect(response.data.data.length).toBe(5);
 })
 
-test('brand ids in brand request are the same as in models request', async () => {
+test.skip('brand ids in brand request are the same as in models request', async () => {
   const brandReponse = await axios.request({
     method: 'get',
     url: 'https://qauto.forstudy.space/api/cars/brands'
